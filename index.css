@@ -1,0 +1,58 @@
+body{
+    background-color:#ccc;
+}
+#question{
+    display: flex;
+
+}
+
+#question .item {
+    font-size: 40px;
+}
+
+.panel{
+    margin-bottom: 20px;
+}
+#question .op{
+    color:green;
+}
+#question .equal{
+    color:green;
+}
+#question .answer{
+    color:red;
+}
+
+
+
+#answer{
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+#answer .item{
+    font-size: 40px;
+    border: 1px solid;
+    width: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#history {
+    font-size: 20px;
+}
+
+#history .item:before{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    content:'';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#history .item.wrong:before{
+    background-color:red;
+}
